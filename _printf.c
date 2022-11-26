@@ -12,7 +12,10 @@ int _printf(const char *format, ...)
 	{
 		{"c", print_char},
 		{"s", print_string},
-		{"%", print_percent}
+		{"%", print_percent},
+		{"d", print_integer},
+		{"i", print_integer},
+		{"u", unsigned_integer}
 	};
 	va_list arg_list;
 
