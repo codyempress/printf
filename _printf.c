@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.h" 
 
 /**
  * _prints - prints number of charcaters
@@ -8,6 +8,7 @@
 
 int _printf(const char *format, ...)
 {
+	int printed_chars;
 	convert_t f_list[] =
 	{
 		{"c", print_char},
@@ -16,10 +17,11 @@ int _printf(const char *format, ...)
 		{"d", print_integer},
 		{"i", print_integer},
 		{"u", unsigned_integer}
+
 	};
 	va_list arg_list;
 
-	if (format == null)
+	if (format == 0)
 	{
 		return (-1);
 	}

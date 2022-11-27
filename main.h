@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdarg.h>
+#include <stddef.h>
 
 /**
  * struct convert - structures symbols and functions
@@ -20,6 +21,7 @@ struct convert
 typedef struct convert convert_t;
 
 int _printf(const char *format, ...);
+int parser(const char *format, convert_t f_list[], va_list arg_list);
 int _write_char(char);
 int print_char(va_list);
 int print_string(va_list);
